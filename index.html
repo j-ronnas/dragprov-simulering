@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dragprov</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="700" height="500" style="border:1px solid #000000;">
+    </canvas>
+    <img src="test_piece.png" alt="Test piece" id="test-piece-img">
+    <p id="force">0N</p>
+    <p id="length">50 mm</p>
+    
+    <select name="Material" id="material-choice"></select>
+
+    <button onclick="startSimulation()">Starta Dragprov</button>
+    <button onclick="stopSimulation()">Stoppa Dragprov</button>
+
+    <table id="data-output"></table>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
